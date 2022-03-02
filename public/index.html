@@ -15,23 +15,25 @@
     <!-- Hero Section -->
     <section class="h-screen bg-no-repeat bg-cover bg-center" style="background-image: url('images/header-background.png');">
         <!-- Navigation -->
-        <nav class="flex justify-between items-center text-blue-500 py-8 px-16 w-full">
+        <nav class="bg-white lg:bg-transparent flex justify-between items-center py-4 px-5 lg:py-8 lg:px-14 lg:border-0 border-b border-gray-300 w-full relative">
             <a href="#" class=""><img class="w-auto h-8" src="./images/logo.svg" alt="Logo"></a>
-            <div class="hidden">MENU</div>
-            <div class="flex justify-center items-center text-sm text-blue-900 font-bold">
-                <a class="mx-4 hover:text-orange-500 duration-300" href="#">Home</a>
-                <a class="mx-4 hover:text-orange-500 duration-300" href="#">Intro</a>
-                <a class="mx-4 hover:text-orange-500 duration-300" href="#">Features</a>
-                <a class="mx-4 hover:text-orange-500 duration-300" href="#">Details</a>
-                <a class="mx-4 hover:text-orange-500 duration-300" href="#">Drop</a>
-                <a class="mx-4 py-2 px-6 rounded-3xl border border-blue-900 text-white bg-blue-900 hover:text-blue-900 hover:bg-transparent duration-300" href="#">Start selling</a>
+            <div id="menu-icon" class='md:hidden cursor-pointer'>
+                <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </div>
+            <div id="menu-items" class="hidden lg:pt-0 md:flex md:justify-center items-center text-sm text-blue-900 font-bold">
+                <a class="md:mx-3 my-4 hover:text-orange-500 duration-300" href="#">Home</a>
+                <a class="md:mx-3 my-4 hover:text-orange-500 duration-300" href="#">Intro</a>
+                <a class="md:mx-3 my-4 hover:text-orange-500 duration-300" href="#">Features</a>
+                <a class="md:mx-3 my-4 hover:text-orange-500 duration-300" href="#">Details</a>
+                <a class="md:mx-3 my-4 hover:text-orange-500 duration-300" href="#">Drop</a>
+                <a class="flex justify-center items-center md:mx-3 my-4 py-2 px-6 rounded-3xl border border-blue-900 text-white bg-blue-900 hover:text-blue-900 hover:bg-transparent duration-300" href="#">Start selling</a>
             </div>
         </nav>
-        <div class="flex items-center justify-center pl-16 pt-10">
-            <div class="w-2/5">
+        <div class="flex lg:flex-row flex-col items-center justify-center lg:pl-16 pt-10 px-16">
+            <div class="lg:w-2/5 w-full flex flex-col justify-center items-center mb-16 text-center">
                 <h2 class="text-5xl leading-tight font-bold text-blue-900 mb-10">Now is the time to start selling things online</h2>
                 <p class="text-lg mb-10 text-gray-600">Kora is a leading online shop creation platform which offers amazing features for ecommerce</p>
-                <div>
+                <div class="flex justify-center items-center">
                     <a class="bg-orange-500 px-10 py-4 text-white border border-orange-500 rounded-full mr-2 text-sm font-bold" href="#">Sign up for free</a>
                     <a class="bg-transparent px-10 py-4 text-orange-500 border border-orange-500 rounded-full ml-2 text-sm font-bold" href="#">Discover</a>
                 </div>
